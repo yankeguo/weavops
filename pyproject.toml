@@ -5,7 +5,7 @@ description = "WeavOps bridges GitOps with MCP-powered AI agents, automatically 
 readme = "README.md"
 authors = [{ name = "Yan-Ke Guo", email = "hi@gyk.me" }]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = ["fastmcp>=2.14.0"]
 license = { text = "MIT" }
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -24,6 +24,9 @@ classifiers = [
 Homepage = "https://github.com/yankeguo/weavops"
 Repository = "https://github.com/yankeguo/weavops"
 Issues = "https://github.com/yankeguo/weavops/issues"
+
+[project.scripts]
+weavops = "weavops:main"
 
 [build-system]
 requires = ["uv_build>=0.9.17,<0.10.0"]
