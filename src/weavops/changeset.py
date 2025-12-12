@@ -5,12 +5,12 @@ from pydantic import BaseModel
 
 class ChangesetCreateItem(BaseModel):
     key: list[str]
-    val: Any
+    val: Any  # pyright: ignore[reportExplicitAny]
 
 
 class ChangesetUpdateItem(BaseModel):
     key: list[str]
-    val: Any
+    val: Any  # pyright: ignore[reportExplicitAny]
 
 
 class ChangesetDeleteItem(BaseModel):
