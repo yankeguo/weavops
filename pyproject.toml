@@ -1,6 +1,6 @@
 [project]
 name = "weavops"
-version = "0.0.1"
+version = "0.0.2"
 description = "WeavOps bridges GitOps with MCP-powered AI agents, automatically weaving your Git source of truth into autonomous, context-aware operations"
 readme = "README.md"
 authors = [{ name = "Yan-Ke Guo", email = "hi@gyk.me" }]
