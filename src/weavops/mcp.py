@@ -9,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
-async def _mcp_lifespan(server: FastMCP):
+async def _mcp_lifespan(server: FastMCP):  # pyright: ignore[reportUnusedParameter]
     async with managed_repository.lifespan() as repository:
         yield {"repository": repository}
 
